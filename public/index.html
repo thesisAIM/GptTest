@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamBox | Demo Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="nav">
+        <div class="logo">STREAM<span>BOX</span></div>
+        <nav class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">TV Shows</a>
+          <a href="#">Movies</a>
+          <a href="#">New & Popular</a>
+          <a href="#">My List</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" aria-label="Search">
+            <span class="icon">🔍</span>
+          </button>
+          <button class="profile" id="profileButton">
+            <img id="profileAvatar" src="/images/avatar.svg" alt="Profile" />
+            <span id="profileName">Profile</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-kicker">#1 in the U.S. today</div>
+          <h1 id="heroTitle">Loading...</h1>
+          <p id="heroDescription">Fetching catalog details.</p>
+          <div class="hero-meta" id="heroMeta"></div>
+          <div class="hero-actions">
+            <button class="btn primary">▶ Play</button>
+            <button class="btn secondary">+ My List</button>
+          </div>
+        </div>
+        <div class="hero-art" id="heroArt"></div>
+      </section>
+
+      <main class="catalog" id="catalog"></main>
+
+      <footer class="footer">
+        <p>Demo experience inspired by a streaming UI. No affiliation with Netflix.</p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
